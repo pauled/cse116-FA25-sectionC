@@ -15,6 +15,21 @@ public class PlusMinus {
             return "F";
         }
     }
+    public static String pm(int score){
+        int ones=score%10;
+        if (score<60){
+            return "";
+        } else if(score>=100){
+            return "+";
+        }else if (ones>=7){
+            return "+";
+        } else if(ones>=3){
+            return "";
+        } else {
+            return "-";
+
+        }
+    }
 
     public static void main(String[] args) {
         String letterTemp=letter(81);
@@ -27,7 +42,13 @@ public class PlusMinus {
 
         for (int x=0; x<3; x++){
             System.out.println(x);
-            x--;
         }
+        String a="hello ";
+        String b="goodbye";
+        String c=a+b;
+        System.out.println("hello goodbye"==c);
+        System.out.println("hello goodbye".equals(c));
+        System.out.println(c);
+
     }
 }
