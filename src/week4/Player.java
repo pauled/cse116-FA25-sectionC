@@ -13,6 +13,12 @@ public class Player {
     public int getHP(){
         return this.HP;
     }
+    public int getMaxHP(){
+        return this.maxHP;
+    }
+    public int getDamageDealt(){
+        return this.damageDealt;
+    }
     public void takeDamage(int amount){
         this.HP-=amount;
     }
