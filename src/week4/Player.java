@@ -19,6 +19,9 @@ public class Player {
     public int getDamageDealt(){
         return this.damageDealt;
     }
+    public void setDamageDealt(int damage){
+        this.damageDealt=damage;
+    }
     public void takeDamage(int amount){
         this.HP-=amount;
     }
