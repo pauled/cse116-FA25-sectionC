@@ -1,7 +1,5 @@
 package week7;
 
-import week4.Player;
-
 public class Weapon extends GameItem{
     private int damage;
 
@@ -24,5 +22,10 @@ public class Weapon extends GameItem{
         w.use(p1);
         //System.out.println(p1);
         System.out.println(w);
+        w.move(10,10);
+        System.out.println(w);
+        System.out.println(p1);
+        p1.move(3,3);
+        System.out.println(p1);
     }
 }
