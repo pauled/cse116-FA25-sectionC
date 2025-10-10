@@ -1,6 +1,6 @@
 package week7;
 
-public class Weapon extends GameItem{
+public class Weapon extends GameItem implements Usable{
     private int damage;
 
     public Weapon(double x,double y,int damage){
@@ -14,6 +14,9 @@ public class Weapon extends GameItem{
         String out="Damage dealt: "+this.damage+" ";
         out+=super.toString();
         return out;
+    }
+    public void kill(Player player){
+        player.takeDamage(1000000);
     }
 
     public static void main(String[] args) {

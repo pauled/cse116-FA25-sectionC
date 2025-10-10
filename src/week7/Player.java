@@ -33,7 +33,7 @@ public class Player extends GameItem{
     public void takeDamage(int amount){
         this.HP-=amount;
     }
-    public void attack(week4.Player otherPlayer){
+    public void attack(Player otherPlayer){
         otherPlayer.takeDamage(this.damageDealt);
     }
     public String toString(){

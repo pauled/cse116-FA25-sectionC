@@ -1,7 +1,7 @@
 package week7;
 
 
-public class HealthPotion extends GameItem{
+public class HealthPotion extends GameItem implements Usable{
     private int increase;
 
     public HealthPotion(double x,double y,int incrse){
