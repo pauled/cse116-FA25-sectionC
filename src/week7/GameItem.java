@@ -1,7 +1,7 @@
 package week7;
 
 
-public abstract class  GameItem {
+public class  GameItem {
     protected double xLoc;
     private double yLoc;
 
