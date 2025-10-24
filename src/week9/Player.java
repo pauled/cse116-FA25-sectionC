@@ -54,7 +54,7 @@ public class Player extends GameItem {
         out+=" attack: "+this.damageDealt;
         out+=" "+super.toString();
         return out;
-    }
+    }/*
     public static void main(String[] args) {
         Usable gm= new Weapon(3,4,5);
         System.out.println(gm);
@@ -70,6 +70,6 @@ public class Player extends GameItem {
         gm.move(10,10);
         //gm2.use(p1);
         System.out.println((double)4/(double)6);
-    }
+    }*/
 }
 

@@ -1,7 +1,7 @@
 package week9;
 
 import week7.GameItem;
-
+/*
 public class Weapon extends GameItem implements Usable {
     private int damage;
 
@@ -33,4 +33,4 @@ public class Weapon extends GameItem implements Usable {
         p1.move(3,3);
         System.out.println(p1);
     }
-}
+}*/
