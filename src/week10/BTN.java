@@ -56,7 +56,7 @@ public class BTN <T>{
         //root.right.left=new BTN<>(7,null,null);
         //root.right.right=new BTN<>(14,null,null);
 
-        System.out.println(root.inOrderTraversal(root));
+        //System.out.println(root.inOrderTraversal(root));
         System.out.println(root.preOrderTraversal(root));
         System.out.println(root.postOrderTraversal(root));
     }
