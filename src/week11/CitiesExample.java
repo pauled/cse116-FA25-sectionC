@@ -43,8 +43,8 @@ public class CitiesExample {
 
     public static void main(String[] args) {
         HashMap<String,ArrayList<City>> countries=
-                loadCountries("data/cities.csv");
-        int threshold=5;
+                loadCountries("data/cities_test_2.csv");
+        int threshold=3;
         HashMap<String,ArrayList<City>> smallCountries=
                 new HashMap<>();
 
@@ -52,6 +52,11 @@ public class CitiesExample {
             ArrayList<City> cities=countries.get(country);
             if (cities.size()<=threshold){
                 smallCountries.put(country,cities);
+            }
+        }
+        for (String country : smallCountries.keySet()){
+            for (City city : smallCountries.get(country)){
+                System.out.println(city);
             }
         }
     }
