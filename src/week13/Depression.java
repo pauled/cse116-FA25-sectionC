@@ -1,7 +1,7 @@
 package week13;
 
-public class Chillin extends MentalState{
-    public Chillin(Student brain){
+public class Depression extends MentalState{
+    public Depression(Student brain){
         super(brain);
     }
     public  void study(){
@@ -13,10 +13,10 @@ public class Chillin extends MentalState{
     public  void expressFeelings(){
         System.out.println("I am done");
     }
-    public void failClass(){
-        System.out.println("it was just a nightmare");
+    public void passClass() {
+        System.out.println("It was just a dream that I passed");
     }
     public void newSemester(){
-        this.brain.setState(new Calm(this.brain));
+        this.brain.setState(new Panic(this.brain));
     }
 }

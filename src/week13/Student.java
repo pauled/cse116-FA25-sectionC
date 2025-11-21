@@ -21,4 +21,10 @@ public class Student {
     public void passClass(){
         this.state.passClass();
     }
+    public void failClass(){
+        this.state.failClass();
+    }
+    public void newSemester(){
+        this.state.newSemester();
+    }
 }

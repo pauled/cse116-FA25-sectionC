@@ -12,4 +12,10 @@ public abstract class MentalState {
     public void passClass(){
         this.brain.setState(new Chillin(brain));
     }
+    public void failClass(){
+        this.brain.setState(new Depression(brain));
+    }
+    public void newSemester(){
+        System.out.println("My head space hasn't changed");
+    }
 }
